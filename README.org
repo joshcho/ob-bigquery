@@ -1,5 +1,5 @@
 * Prereq
-1. Install ob-python and ob-sql on Emacs.
+1. Install ob-python.
 2. Follow instructions on https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries to set up BigQuery for python.
 
 * Usage
