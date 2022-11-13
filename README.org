@@ -3,11 +3,11 @@
 2. Follow instructions on https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries to set up BigQuery for python.
 
 * Usage
-1. Evaluate/load the function ~org-babel-bigquery-ctrl-c-ctrl-c~ in ob-bigquery.el.
-2. Bind org-babel-bigquery-ctrl-c-ctrl-c to something, e.g.
+1. Evaluate/load the function ~ob-bigquery-ctrl-c-ctrl-c~ in ob-bigquery.el.
+2. Bind ob-bigquery-ctrl-c-ctrl-c to something, e.g.
    #+begin_src emacs-lisp
-   (define-key org-mode-map (kbd "C-c C-e") #'org-babel-bigquery-ctrl-c-ctrl-c)
+   (define-key org-mode-map (kbd "C-c C-e") #'ob-bigquery-ctrl-c-ctrl-c)
    #+end_src
-3. Within org-babel source code with language set to ~sql~, call ~org-babel-bigquery-ctrl-c-ctrl-c~. Don't call ~C-c C-c~, as that would run regular SQL, which is not what we want.
+3. Within org-babel source code with language set to ~sql~, call ~ob-bigquery-ctrl-c-ctrl-c~. Don't call ~C-c C-c~, as that would run regular SQL, which is not what we want.
 * Implementation
-The function ~org-babel-bigquery-ctrl-c-ctrl-c~ decorates the text and feeds it to python. Hacky and does not interface with internals of org-babel.
+The function ~ob-bigquery-ctrl-c-ctrl-c~ decorates the text and feeds it to python. Hacky and does not interface with internals of org-babel.
