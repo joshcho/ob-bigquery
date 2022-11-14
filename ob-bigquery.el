@@ -10,7 +10,7 @@ query_job = client.query(
 \"\"\"
 )
 results = list(query_job.result())
-%s = list(map(lambda row: list(map(lambda val: val if val != '' else \"null\", row.values())), results))
+%s = list(map(lambda row: list(map(lambda val: str(val) if val != '' else \"null\", row.values())), results))
 %s[list(results[0].keys())] + %s[:%s]")
 
 (defun ob-bigquery-ctrl-c-ctrl-c ()
