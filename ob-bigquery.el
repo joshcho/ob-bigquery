@@ -1,6 +1,6 @@
 (require 'ob-python)
 
-(defvar ob-num-max-rows 25)
+(defvar ob-num-max-rows 50)
 (defvar ob-fmt-string "from google.cloud import bigquery
 client = bigquery.Client()
 job_config = bigquery.QueryJobConfig(dry_run=True, use_query_cache=False)
